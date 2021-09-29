@@ -80,13 +80,11 @@ h6 {
   font-size: 15px;
   height: 50px;
   transition: all 0.5s;
-  background: rgba(26, 24, 22, 0.8);
+  background: var(--dark-color);
   z-index: 996;
   color: rgba(255, 255, 255, 0.7);
 }
-#topbar.topbar-transparent {
-  background: transparent;
-}
+
 #topbar.topbar-scrolled {
   top: -50px;
 }
@@ -109,14 +107,13 @@ h6 {
   z-index: 997;
   transition: all 0.5s;
   padding: 10px 0;
-  background: rgba(26, 24, 22, 0.952);
+  background: rgba(0, 0, 0, 0.24);
 }
-#header.header-transparent {
-  background: transparent;
-}
+
 #header.header-scrolled {
   top: 0;
-  background: rgba(26, 24, 22, 0.918);
+  background: var(--dark-color);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
 }
 #header .logo h1 {
   font-size: 28px;
