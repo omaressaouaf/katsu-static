@@ -10,9 +10,9 @@
 :root {
   --dark-color: #040707;
   --secondary-color: #846e45;
-  --primary-color: #446E6A;
-  --primary-color-dark : #284644;
-  --primary-color-light : #9DA981;
+  --primary-color: #446e6a;
+  --primary-color-dark: #284644;
+  --primary-color-light: #9da981;
 }
 /*--------------------------------------------------------------
 # General
@@ -215,8 +215,7 @@ h6 {
   opacity: 0;
   visibility: hidden;
   background: #fff;
-  box-shadow: 0px 0px 30px
-    var(--dark-color);
+  box-shadow: 0px 0px 30px var(--dark-color);
   transition: 0.3s;
   border-radius: 4px;
 }
@@ -336,8 +335,7 @@ h6 {
   opacity: 1;
   visibility: visible;
   background: #fff;
-  box-shadow: 0px 0px 30px
-    var(--dark-color);
+  box-shadow: 0px 0px 30px var(--dark-color);
 }
 .navbar-mobile .dropdown ul li {
   min-width: 200px;
@@ -422,12 +420,8 @@ h6 {
   opacity: 0;
 }
 #hero .carousel-inner .active,
-#hero
-  .carousel-inner
-  .carousel-item-next.carousel-item-start,
-#hero
-  .carousel-inner
-  .carousel-item-prev.carousel-item-end {
+#hero .carousel-inner .carousel-item-next.carousel-item-start,
+#hero .carousel-inner .carousel-item-prev.carousel-item-end {
   opacity: 1;
   transition: 0.5s;
 }
@@ -641,10 +635,7 @@ section {
 .about .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(
-    var(--primary-color) 50%,
-    rgba(162, 255, 170, 0.4) 52%
-  );
+  background: radial-gradient(var(--primary-color) 50%, rgba(162, 255, 170, 0.4) 52%);
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -664,8 +655,7 @@ section {
   border-bottom: 10px solid transparent;
   border-left: 15px solid #fff;
   z-index: 100;
-  transition: all 400ms
-    cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 .about .play-btn::before {
   content: "";
@@ -767,7 +757,7 @@ section {
   font-weight: 600;
   padding: 0;
   margin: 20px 0;
-  color: #6c665c;
+  color: var(--primary-color);
 }
 .why-us .box p {
   color: #aaaaaa;
@@ -786,78 +776,94 @@ section {
   color: #fff;
 }
 
+
 /*--------------------------------------------------------------
 # Menu Section
 --------------------------------------------------------------*/
-.menu #menu-flters {
-  padding: 0;
-  margin: 0 auto 0 auto;
-  list-style: none;
-  text-align: center;
-  border-radius: 50px;
+#menu .carousel-item {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.menu #menu-flters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 8px 16px 10px 16px;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1;
-  color: #444444;
-  margin: 0 3px 10px 3px;
-  transition: all ease-in-out 0.3s;
-  background: #fff;
-  border: 2px solid var(--primary-color);
-  border-radius: 50px;
-}
-.menu #menu-flters li:hover,
-.menu #menu-flters li.filter-active {
-  color: #fff;
-  background: var(--primary-color);
-}
-.menu #menu-flters li:last-child {
-  margin-right: 0;
-}
-.menu .menu-content {
-  margin-top: 30px;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-}
-.menu .menu-content::after {
-  content: "......................................................................"
-    "...................................................................."
-    "....................................................................";
+#menu .carousel-item::before {
+  content: "";
   position: absolute;
-  left: 20px;
+  top: 0;
   right: 0;
-  top: -4px;
-  z-index: 1;
-  color: #dad8d4;
-  font-family: Arial, "Helvetica Neue", Helvetica,
-    sans-serif;
+  left: 0;
+  bottom: 0;
 }
-.menu .menu-content a {
-  padding-right: 10px;
-  background: #fff;
-  position: relative;
-  z-index: 3;
-  font-weight: 700;
-  color: var(--primary-color-dark);
+#menu .carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
 }
-.menu .menu-content span {
-  background: #fff;
-  position: relative;
-  z-index: 3;
-  padding: 0 10px;
-  font-weight: 600;
+#menu .carousel-content {
+  text-align: center;
 }
-.menu .menu-ingredients {
-  font-style: italic;
-  font-size: 14px;
-  font-family: "Comic Neue", sans-serif;
-  color: #948c81;
+#menu .carousel-inner .carousel-item {
+  transition-property: opacity;
+  background-position: center top;
+}
+#menu .carousel-inner .carousel-item,
+#menu .carousel-inner .active.carousel-item-start,
+#menu .carousel-inner .active.carousel-item-end {
+  opacity: 0;
+}
+#menu .carousel-inner .active,
+#menu .carousel-inner .carousel-item-next.carousel-item-start,
+#menu .carousel-inner .carousel-item-prev.carousel-item-end {
+  opacity: 1;
+  transition: 0.5s;
+}
+#menu .carousel-inner .carousel-item-next,
+#menu .carousel-inner .carousel-item-prev,
+#menu .carousel-inner .active.carousel-item-start,
+#menu .carousel-inner .active.carousel-item-end {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+#menu .carousel-control-next-icon,
+#menu .carousel-control-prev-icon {
+  background: none;
+  font-size: 30px;
+  line-height: 0;
+  width: auto;
+  height: auto;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  transition: 0.3s;
+  color: rgba(255, 255, 255, 0.5);
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#menu .carousel-control-next-icon:hover,
+#menu .carousel-control-prev-icon:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.8);
+}
+#menu .carousel-indicators li {
+  cursor: pointer;
+}
+
+
+
+@media (min-width: 1024px) {
+
+  #menu .carousel-control-prev,
+  #menu .carousel-control-next {
+    width: 5%;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -917,8 +923,7 @@ section {
 # Events
 --------------------------------------------------------------*/
 .events {
-  background: url(../img/events-bg.jpg) center
-    center no-repeat;
+  background: url(../img/events-bg.jpg) center center no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -982,17 +987,13 @@ section {
   margin-top: 20px;
   position: relative;
 }
-.events
-  .swiper-pagination
-  .swiper-pagination-bullet {
+.events .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: rgba(255, 255, 255, 0.5);
   opacity: 1;
 }
-.events
-  .swiper-pagination
-  .swiper-pagination-bullet-active {
+.events .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--primary-color);
 }
 
@@ -1023,11 +1024,7 @@ section {
   padding: 15px;
   font-weight: 600;
 }
-.book-a-table
-  .php-email-form
-  .error-message
-  br
-  + br {
+.book-a-table .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 .book-a-table .php-email-form .sent-message {
@@ -1053,8 +1050,7 @@ section {
   margin: 0 10px -6px 0;
   border: 3px solid #18d26e;
   border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear
-    infinite;
+  -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
 .book-a-table .php-email-form input,
@@ -1069,9 +1065,7 @@ section {
 .book-a-table .php-email-form textarea {
   padding: 10px 12px;
 }
-.book-a-table
-  .php-email-form
-  button[type="submit"] {
+.book-a-table .php-email-form button[type="submit"] {
   background: var(--primary-color);
   border: 0;
   padding: 10px 24px;
@@ -1079,9 +1073,7 @@ section {
   transition: 0.4s;
   border-radius: 50px;
 }
-.book-a-table
-  .php-email-form
-  button[type="submit"]:hover {
+.book-a-table .php-email-form button[type="submit"]:hover {
   background: var(--primary-color-dark);
 }
 
@@ -1089,7 +1081,25 @@ section {
 # Gallery
 --------------------------------------------------------------*/
 .gallery {
-  padding-bottom: 0;
+  background: url("../img/chefs-bg.jpg") center center  no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+  position: relative;
+  background-attachment: fixed;
+}
+.gallery::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 9;
+}
+.gallery .container-fluid {
+  position: relative;
+  z-index: 10;
 }
 .gallery .gallery-item {
   overflow: hidden;
@@ -1107,8 +1117,7 @@ section {
 # Chefs
 --------------------------------------------------------------*/
 .chefs {
-  background: url("../img/chefs-bg.jpg") center
-    center no-repeat;
+  background: url("../img/chefs-bg.jpg") center center no-repeat;
   background-size: cover;
   padding: 60px 0;
   position: relative;
@@ -1201,8 +1210,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("../img/testimonials-bg.jpg")
-    no-repeat;
+  background: url("../img/testimonials-bg.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -1251,9 +1259,7 @@ section {
   margin-bottom: 10px;
 }
 .testimonials .testimonial-item .quote-icon-left,
-.testimonials
-  .testimonial-item
-  .quote-icon-right {
+.testimonials .testimonial-item .quote-icon-right {
   color: rgba(255, 255, 255, 0.4);
   font-size: 26px;
 }
@@ -1262,9 +1268,7 @@ section {
   left: -5px;
   position: relative;
 }
-.testimonials
-  .testimonial-item
-  .quote-icon-right {
+.testimonials .testimonial-item .quote-icon-right {
   display: inline-block;
   right: -5px;
   position: relative;
@@ -1279,17 +1283,13 @@ section {
   margin-top: 20px;
   position: relative;
 }
-.testimonials
-  .swiper-pagination
-  .swiper-pagination-bullet {
+.testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: rgba(255, 255, 255, 0.5);
   opacity: 1;
 }
-.testimonials
-  .swiper-pagination
-  .swiper-pagination-bullet-active {
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--primary-color);
 }
 @media (min-width: 992px) {
@@ -1379,8 +1379,7 @@ section {
   margin: 0 10px -6px 0;
   border: 3px solid #18d26e;
   border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear
-    infinite;
+  -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
 .contact .php-email-form input,
@@ -1403,9 +1402,7 @@ section {
   transition: 0.4s;
   border-radius: 50px;
 }
-.contact
-  .php-email-form
-  button[type="submit"]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: var(--primary-color-dark);
 }
 @-webkit-keyframes animate-loading {
@@ -1475,3 +1472,4 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+

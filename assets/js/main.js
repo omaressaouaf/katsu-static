@@ -172,35 +172,46 @@
     heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "' class='active'></li>":
       heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "'></li>"
   });
+  /**
+   * Menu carousel indicators
+   */
+  let menuCarouselIndicators = select("#menu-carousel-indicators")
+  let menuCarouselItems = select('#menuCarousel .carousel-item', true)
+
+  menuCarouselItems.forEach((item, index) => {
+    (index === 0) ?
+    menuCarouselIndicators.innerHTML += "<li data-bs-target='#menuCarousel' data-bs-slide-to='" + index + "' class='active'></li>":
+      menuCarouselIndicators.innerHTML += "<li data-bs-target='#menuCarousel' data-bs-slide-to='" + index + "'></li>"
+  });
 
   /**
    * Menu isotope and filter
    */
-  window.addEventListener('load', () => {
-    let menuContainer = select('.menu-container');
-    if (menuContainer) {
-      let menuIsotope = new Isotope(menuContainer, {
-        itemSelector: '.menu-item',
-        layoutMode: 'fitRows'
-      });
+  // window.addEventListener('load', () => {
+  //   let menuContainer = select('.menu-container');
+  //   if (menuContainer) {
+  //     let menuIsotope = new Isotope(menuContainer, {
+  //       itemSelector: '.menu-item',
+  //       layoutMode: 'fitRows'
+  //     });
 
-      let menuFilters = select('#menu-flters li', true);
+  //     let menuFilters = select('#menu-flters li', true);
 
-      on('click', '#menu-flters li', function(e) {
-        e.preventDefault();
-        menuFilters.forEach(function(el) {
-          el.classList.remove('filter-active');
-        });
-        this.classList.add('filter-active');
+  //     on('click', '#menu-flters li', function(e) {
+  //       e.preventDefault();
+  //       menuFilters.forEach(function(el) {
+  //         el.classList.remove('filter-active');
+  //       });
+  //       this.classList.add('filter-active');
 
-        menuIsotope.arrange({
-          filter: this.getAttribute('data-filter')
-        });
+  //       menuIsotope.arrange({
+  //         filter: this.getAttribute('data-filter')
+  //       });
 
-      }, true);
-    }
+  //     }, true);
+  //   }
 
-  });
+  // });
 
   /**
    * Testimonials slider
