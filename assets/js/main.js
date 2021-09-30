@@ -118,8 +118,8 @@
    */
   on("click", ".mobile-nav-toggle", function (e) {
     select("#navbar").classList.toggle("navbar-mobile");
-    this.classList.toggle("bi-list");
-    this.classList.toggle("bi-x");
+    this.classList.toggle("fa-bars");
+    this.classList.toggle("fa-times");
   });
 
   /**
@@ -151,8 +151,8 @@
         if (navbar.classList.contains("navbar-mobile")) {
           navbar.classList.remove("navbar-mobile");
           let navbarToggle = select(".mobile-nav-toggle");
-          navbarToggle.classList.toggle("bi-list");
-          navbarToggle.classList.toggle("bi-x");
+          navbarToggle.classList.toggle("fa-bars");
+          navbarToggle.classList.toggle("fa-times");
         }
         scrollto(this.hash);
       }
@@ -174,16 +174,16 @@
   /**
    * Hero carousel indicators
    */
-  let heroCarouselIndicators = select("#hero-carousel-indicators");
-  let heroCarouselItems = select("#heroCarousel .carousel-item", true);
+  // let heroCarouselIndicators = select("#hero-carousel-indicators");
+  // let heroCarouselItems = select("#heroCarousel .carousel-item", true);
 
-  heroCarouselItems.forEach((item, index) => {
-    index === 0
-      ? (heroCarouselIndicators.innerHTML +=
-          "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "' class='active'></li>")
-      : (heroCarouselIndicators.innerHTML +=
-          "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "'></li>");
-  });
+  // heroCarouselItems.forEach((item, index) => {
+  //   index === 0
+  //     ? (heroCarouselIndicators.innerHTML +=
+  //         "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "' class='active'></li>")
+  //     : (heroCarouselIndicators.innerHTML +=
+  //         "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "'></li>");
+  // });
   /**
    * Menu carousel indicators
    */

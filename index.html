@@ -30,10 +30,17 @@
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
@@ -45,8 +52,8 @@
       <div
         class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start"
       >
-        <i class="bi bi-phone d-flex align-items-center"><span>0520 106 140 / 0614 598 949</span></i>
-        <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"><span>Lun-Dim: 12:00 AM - 11:00 PM</span></i>
+        <div style="margin-right: 10px"><i class="fa fa-phone"></i> <span>0520 106 140 / 0614 598 949</span></div>
+        <div class="d-none d-lg-block"><i class="fa fa-clock"></i> <span>Lun-Dim: 12:00 AM - 11:00 PM</span></div>
       </div>
     </section>
 
@@ -73,7 +80,7 @@
               <a class="nav-link scrollto" href="#gallery">Galerie</a>
             </li>
           </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
+          <i class="fas fa-bars mobile-nav-toggle"></i>
         </nav>
         <!-- .navbar -->
 
@@ -86,39 +93,13 @@
     <section id="hero">
       <div class="hero-container">
         <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
-          <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
           <div aria-label="hero slider" class="carousel-inner" role="listbox">
             <!-- Slide 1 -->
-            <div
-              class="carousel-item"
-              style="
-                background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.664)),
-                  url(assets/img/hero/hero-1.jpg);
-              "
-            >
-              <div class="carousel-container">
-                <div class="carousel-content">
-                  <h1 class="animate__animated animate__fadeInDown">
-                    <span>Katsu ,</span>
-                    Restaurant Asiatique à casablanca
-                  </h1>
-                  <p class="animate__animated animate__fadeInUp">
-                    Cuisine asiatique qui propose divers menus tels que des sushi rolls et sushi boxes. et livraison à
-                    casablanca, Bouskoura et lieux proches
-                  </p>
-                  <div>
-                    <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Notre menu</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Slide 2 -->
             <div
               class="carousel-item active"
               style="
                 background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.664)),
-                  url(assets/img/gallery/gallery-13.jpg) no-repeat;
-                background-size: cover;
+                  url(assets/img/gallery/gallery-13.jpg);
               "
             >
               <div class="carousel-container">
@@ -138,26 +119,6 @@
               </div>
             </div>
           </div>
-          <a
-            aria-label="Slider Controls"
-            rel="noopener"
-            class="carousel-control-prev"
-            href="#heroCarousel"
-            role="button"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-          </a>
-          <a
-            aria-label="Slider Controls"
-            rel="noopener"
-            class="carousel-control-next"
-            href="#heroCarousel"
-            role="button"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-          </a>
         </div>
       </div>
     </section>
@@ -324,7 +285,7 @@
               role="button"
               data-bs-slide="prev"
             >
-              <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+              <span class="carousel-control-prev-icon fa fa-chevron-left" aria-hidden="true"></span>
             </a>
 
             <a
@@ -335,7 +296,7 @@
               role="button"
               data-bs-slide="next"
             >
-              <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+              <span class="carousel-control-next-icon fa fa-chevron-right" aria-hidden="true"></span>
             </a>
           </div>
         </div>
@@ -639,7 +600,7 @@
           <div class="info-wrap">
             <div class="row">
               <div class="col-lg-4 col-md-6 info">
-                <i class="bi bi-geo-alt"></i>
+                <i class="fa fa-map-marker-alt"></i>
                 <h4>Localisation:</h4>
                 <p>
                   17 Rue Sebou, <br />
@@ -648,13 +609,13 @@
               </div>
 
               <div class="col-lg-4 col-md-6 info mt-4 mt-lg-0">
-                <i class="bi bi-clock"></i>
+                <i class="fa fa-clock"></i>
                 <h4>Heures d'ouverture:</h4>
                 <p>Lundi-Dimanche:<br />12:00 AM - 11:00 PM</p>
               </div>
 
               <div class="col-lg-4 col-md-6 info mt-4 mt-lg-0">
-                <i class="bi bi-phone"></i>
+                <i class="fa fa-phone"></i>
                 <h4>Appelez-nous:</h4>
                 <p>
                   0520 106 140 <br />
@@ -686,7 +647,7 @@
             target="_blank"
             href="https://www.facebook.com/restaurantkatsu"
             class="facebook"
-            ><i class="bx bxl-facebook"></i
+            ><i class="fab fa-facebook"></i
           ></a>
           <a
             aria-label="instagram"
@@ -694,7 +655,7 @@
             target="_blank"
             href="https://www.instagram.com/katsumaroc"
             class="instagram"
-            ><i class="bx bxl-instagram"></i
+            ><i class="fab fa-instagram"></i
           ></a>
         </div>
         <div class="copyright">
@@ -716,7 +677,7 @@
     <!-- End Footer -->
 
     <a href="tel:+212614598949" class="btn-prim call-delivery-btn">
-      <i class="bx bxs-phone-call"></i> <span>0614 598 949</span>
+      <i class="fa fa-phone"></i> <span>0614 598 949</span>
     </a>
 
     <!-- Vendor JS Files -->
