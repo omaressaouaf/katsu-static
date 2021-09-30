@@ -90,6 +90,25 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Call delivery button
+--------------------------------------------------------------*/
+.call-delivery-btn {
+  position: fixed;
+  right: 11px;
+  bottom: 15px;
+  z-index: 996;
+  background: var(--primary-color);
+  border-radius: 50px;
+  transition: all 0.4s;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
+}
+.call-delivery-btn i {
+  color : white !important;
+}
+
+
+
+/*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
@@ -288,6 +307,7 @@ h6 {
   display: none;
   line-height: 0;
   transition: 0.5s;
+  text-align: end;
 }
 
 @media (max-width: 991px) {
@@ -414,13 +434,13 @@ h6 {
 #hero .carousel-content {
   text-align: center;
 }
-#hero h2 {
+#hero h1 {
   color: #fff;
   margin-bottom: 30px;
   font-size: 48px;
   font-weight: 700;
 }
-#hero h2 span {
+#hero h1 span {
   color: var(--primary-color);
 }
 #hero p {
