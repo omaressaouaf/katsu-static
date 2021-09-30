@@ -88,10 +88,10 @@
       <div class="hero-container">
         <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-          <div class="carousel-inner" role="listbox">
+          <div aria-label="hero slider" class="carousel-inner" role="listbox">
             <!-- Slide 1 -->
             <div
-              class="carousel-item "
+              class="carousel-item"
               style="
                 background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.664)),
                   url(assets/img/hero/hero-1.jpg);
@@ -118,7 +118,8 @@
               class="carousel-item active"
               style="
                 background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.664)),
-                  url(assets/img/gallery/gallery-13.jpg) no-repeat ; background-size: cover;
+                  url(assets/img/gallery/gallery-13.jpg) no-repeat;
+                background-size: cover;
               "
             >
               <div class="carousel-container">
@@ -138,10 +139,10 @@
               </div>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <a  aria-label="Slider Controls" rel="noopener" class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
             <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
           </a>
-          <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <a  aria-label="Slider Controls" rel="noopener" class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
             <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
           </a>
         </div>
@@ -154,8 +155,10 @@
       <section id="about" class="about">
         <div class="container">
           <div class="row">
-            <div class="col-lg-5 align-items-stretch video-box" style="background-image: url('assets/img/gallery/gallery-1.jpg')">
-            </div>
+            <div
+              class="col-lg-5 align-items-stretch video-box"
+              style="background-image: url('assets/img/gallery/gallery-1.jpg')"
+            ></div>
 
             <div class="col-lg-7 d-flex flex-column align-items-stretch">
               <div class="content">
@@ -186,7 +189,7 @@
           <div id="menuCarousel" data-bs-interval="30000" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <ol class="carousel-indicators" id="menu-carousel-indicators"></ol>
 
-            <div class="carousel-inner" role="listbox">
+            <div aria-label="menu slider" class="carousel-inner" role="listbox">
               <!-- Slide 1 -->
               <div class="carousel-item active">
                 <div class="d-flex flex-column flex-xl-row">
@@ -299,11 +302,11 @@
               </div>
             </div>
 
-            <a class="carousel-control-prev" href="#menuCarousel" role="button" data-bs-slide="prev">
+            <a  aria-label="Slider Controls" rel="noopener" class="carousel-control-prev" href="#menuCarousel" role="button" data-bs-slide="prev">
               <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
             </a>
 
-            <a class="carousel-control-next" href="#menuCarousel" role="button" data-bs-slide="next">
+            <a  aria-label="Slider Controls" rel="noopener" class="carousel-control-next" href="#menuCarousel" role="button" data-bs-slide="next">
               <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
             </a>
           </div>
@@ -370,120 +373,150 @@
           <div class="row no-gutters">
             <div class="col-lg-3 col-md-4">
               <div class="gallery-item">
-                <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox">
-                  <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid" />
+                <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox" aria-label="Gallery" rel="noopener">
+                  <img src="assets/img/gallery/gallery-1.jpg" alt="Gallery" class="img-fluid" />
                 </a>
               </div>
             </div>
 
             <div class="col-lg-3 col-md-4">
               <div class="gallery-item">
-                <a href="assets/img/gallery/gallery-2.jpg" class="gallery-lightbox">
-                  <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid" />
+                <a href="assets/img/gallery/gallery-2.jpg" class="gallery-lightbox" aria-label="Gallery" rel="noopener">
+                  <img src="assets/img/gallery/gallery-2.jpg" alt="Gallery" class="img-fluid" />
                 </a>
               </div>
             </div>
 
             <div class="col-lg-3 col-md-4">
               <div class="gallery-item">
-                <a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox">
-                  <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid" />
+                <a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox" aria-label="Gallery" rel="noopener">
+                  <img src="assets/img/gallery/gallery-3.jpg" alt="Gallery" class="img-fluid" />
                 </a>
               </div>
             </div>
 
             <div class="col-lg-3 col-md-4">
               <div class="gallery-item">
-                <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox">
-                  <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid" />
+                <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox" aria-label="Gallery" rel="noopener">
+                  <img src="assets/img/gallery/gallery-4.jpg" alt="Gallery" class="img-fluid" />
                 </a>
               </div>
             </div>
 
             <div class="col-lg-3 col-md-4">
               <div class="gallery-item">
-                <a href="assets/img/gallery/gallery-5.jpg" class="gallery-lightbox">
-                  <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid" />
+                <a href="assets/img/gallery/gallery-5.jpg" class="gallery-lightbox" aria-label="Gallery" rel="noopener">
+                  <img src="assets/img/gallery/gallery-5.jpg" alt="Gallery" class="img-fluid" />
                 </a>
               </div>
             </div>
 
             <div class="col-lg-3 col-md-4">
               <div class="gallery-item">
-                <a href="assets/img/gallery/gallery-6.jpg" class="gallery-lightbox">
-                  <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid" />
+                <a href="assets/img/gallery/gallery-6.jpg" class="gallery-lightbox" aria-label="Gallery" rel="noopener">
+                  <img src="assets/img/gallery/gallery-6.jpg" alt="Gallery" class="img-fluid" />
                 </a>
               </div>
             </div>
 
             <div class="col-lg-3 col-md-4">
               <div class="gallery-item">
-                <a href="assets/img/gallery/gallery-7.jpg" class="gallery-lightbox">
-                  <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid" />
+                <a href="assets/img/gallery/gallery-7.jpg" class="gallery-lightbox" aria-label="Gallery" rel="noopener">
+                  <img src="assets/img/gallery/gallery-7.jpg" alt="Gallery" class="img-fluid" />
                 </a>
               </div>
             </div>
 
             <div class="col-lg-3 col-md-4">
               <div class="gallery-item">
-                <a href="assets/img/gallery/gallery-8.jpg" class="gallery-lightbox">
-                  <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid" />
+                <a href="assets/img/gallery/gallery-8.jpg" class="gallery-lightbox" aria-label="Gallery" rel="noopener">
+                  <img src="assets/img/gallery/gallery-8.jpg" alt="Gallery" class="img-fluid" />
                 </a>
               </div>
             </div>
 
             <div class="col-lg-3 col-md-4">
               <div class="gallery-item">
-                <a href="assets/img/gallery/gallery-9.jpg" class="gallery-lightbox">
-                  <img src="assets/img/gallery/gallery-9.jpg" alt="" class="img-fluid" />
+                <a href="assets/img/gallery/gallery-9.jpg" class="gallery-lightbox" aria-label="Gallery" rel="noopener">
+                  <img src="assets/img/gallery/gallery-9.jpg" alt="Gallery" class="img-fluid" />
                 </a>
               </div>
             </div>
 
             <div class="col-lg-3 col-md-4">
               <div class="gallery-item">
-                <a href="assets/img/gallery/gallery-10.jpg" class="gallery-lightbox">
-                  <img src="assets/img/gallery/gallery-10.jpg" alt="" class="img-fluid" />
+                <a
+                  href="assets/img/gallery/gallery-10.jpg"
+                  class="gallery-lightbox"
+                  aria-label="Gallery"
+                  rel="noopener"
+                >
+                  <img src="assets/img/gallery/gallery-10.jpg" alt="Gallery" class="img-fluid" />
                 </a>
               </div>
             </div>
 
             <div class="col-lg-3 col-md-4">
               <div class="gallery-item">
-                <a href="assets/img/gallery/gallery-11.jpg" class="gallery-lightbox">
-                  <img src="assets/img/gallery/gallery-11.jpg" alt="" class="img-fluid" />
+                <a
+                  href="assets/img/gallery/gallery-11.jpg"
+                  class="gallery-lightbox"
+                  aria-label="Gallery"
+                  rel="noopener"
+                >
+                  <img src="assets/img/gallery/gallery-11.jpg" alt="Gallery" class="img-fluid" />
                 </a>
               </div>
             </div>
 
             <div class="col-lg-3 col-md-4">
               <div class="gallery-item">
-                <a href="assets/img/gallery/gallery-12.jpg" class="gallery-lightbox">
-                  <img src="assets/img/gallery/gallery-12.jpg" alt="" class="img-fluid" />
+                <a
+                  href="assets/img/gallery/gallery-12.jpg"
+                  class="gallery-lightbox"
+                  aria-label="Gallery"
+                  rel="noopener"
+                >
+                  <img src="assets/img/gallery/gallery-12.jpg" alt="Gallery" class="img-fluid" />
                 </a>
               </div>
             </div>
 
             <div class="col-lg-3 col-md-4">
               <div class="gallery-item">
-                <a href="assets/img/gallery/gallery-13.jpg" class="gallery-lightbox">
-                  <img src="assets/img/gallery/gallery-13.jpg" alt="" class="img-fluid" />
+                <a
+                  href="assets/img/gallery/gallery-13.jpg"
+                  class="gallery-lightbox"
+                  aria-label="Gallery"
+                  rel="noopener"
+                >
+                  <img src="assets/img/gallery/gallery-13.jpg" alt="Gallery" class="img-fluid" />
                 </a>
               </div>
             </div>
 
             <div class="col-lg-3 col-md-4">
               <div class="gallery-item">
-                <a href="assets/img/gallery/gallery-14.jpg" class="gallery-lightbox">
-                  <img src="assets/img/gallery/gallery-14.jpg" alt="" class="img-fluid" />
+                <a
+                  href="assets/img/gallery/gallery-14.jpg"
+                  class="gallery-lightbox"
+                  aria-label="Gallery"
+                  rel="noopener"
+                >
+                  <img src="assets/img/gallery/gallery-14.jpg" alt="Gallery" class="img-fluid" />
                 </a>
               </div>
             </div>
 
             <div class="col-lg-3 col-md-4">
               <div class="gallery-item">
-                <a href="assets/img/gallery/gallery-15.jpg" class="gallery-lightbox">
-                  <img src="assets/img/gallery/gallery-15.jpg" alt="" class="img-fluid" />
+                <a
+                  href="assets/img/gallery/gallery-15.jpg"
+                  class="gallery-lightbox"
+                  aria-label="Gallery"
+                  rel="noopener"
+                >
+                  <img src="assets/img/gallery/gallery-15.jpg" alt="Gallery" class="img-fluid" />
                 </a>
               </div>
             </div>
@@ -495,75 +528,7 @@
       </section>
       <!-- End Gallery Section -->
 
-      <!-- ======= Chefs Section ======= -->
-      <!-- <section id="chefs" class="chefs">
-        <div class="container">
-          <div class="section-title">
-            <h2>Our Proffesional <span>Chefs</span></h2>
-            <p>
-              Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae
-              autem.
-            </p>
-          </div>
 
-          <div class="row">
-            <div class="col-lg-4 col-md-6">
-              <div class="member">
-                <div class="pic">
-                  <img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="member-info">
-                  <h4>Walter White</h4>
-                  <span>Master Chef</span>
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-              <div class="member">
-                <div class="pic">
-                  <img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="member-info">
-                  <h4>Sarah Jhonson</h4>
-                  <span>Patissier</span>
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-              <div class="member">
-                <div class="pic">
-                  <img src="assets/img/chefs/chefs-3.jpg" class="img-fluid" alt="" />
-                </div>
-                <div class="member-info">
-                  <h4>William Anderson</h4>
-                  <span>Cook</span>
-                  <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-      <!-- End Chefs Section -->
       <!-- ======= Testimonials Section ======= -->
       <section id="testimonials" class="testimonials">
         <div class="container position-relative">
@@ -571,7 +536,7 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="" />
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="Dounia batma" />
                   <h3>Dounia Batma</h3>
                   <h4>chanteuse</h4>
                   <div class="stars">
@@ -587,7 +552,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="" />
+                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="Leila hadioui" />
                   <h3>Leila hadioui</h3>
                   <h4>actrice</h4>
                   <div class="stars">
@@ -596,14 +561,14 @@
                   </div>
                   <p>
                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    ç'est très bon surtout les tacos j'ai rarement manger des tacos Bnan bhal haka
+                    ç'est très bon surtout les tacos j'ai rarement manger des tacos Bnan bhalhaka
                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                   </p>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="" />
+                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="sonia ngadi" />
                   <h3>sonia ngadi</h3>
                   <h4>influenceur</h4>
                   <div class="stars">
@@ -635,6 +600,7 @@
 
         <div class="container map">
           <iframe
+            title="Map"
             style="border: 0; width: 100%; height: 350px"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d37601.28406720606!2d-7.640239058550534!3d33.59193019192543!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d39b391da619%3A0x49d2f703488d9ef9!2sKATSU!5e0!3m2!1sen!2sus!4v1632857712215!5m2!1sen!2sus"
             frameborder="0"
@@ -679,16 +645,16 @@
     <!-- ======= Footer ======= -->
     <footer id="footer">
       <div class="container">
-        <a href="#hero"><img src="assets/img/logo-green.png" alt="katsu logo" class="img-fluid mb-4" /></a>
+        <a  aria-label="Katsu Logo" rel="noopener" href="#hero"><img src="assets/img/logo-green.png" alt="katsu logo" class="img-fluid mb-4" /></a>
         <p>
           <i class="bx bxs-quote-alt-left quote-icon-left"></i> Katsu, taste the difference
           <i class="bx bxs-quote-alt-right quote-icon-right"></i>
         </p>
         <div class="social-links">
-          <a target="_blank" href="https://www.facebook.com/restaurantkatsu" class="facebook"
+          <a  aria-label="facebook" rel="noopener" target="_blank" href="https://www.facebook.com/restaurantkatsu" class="facebook"
             ><i class="bx bxl-facebook"></i
           ></a>
-          <a target="_blank" href="https://www.instagram.com/katsumaroc" class="instagram"
+          <a  aria-label="instagram" rel="noopener" target="_blank" href="https://www.instagram.com/katsumaroc" class="instagram"
             ><i class="bx bxl-instagram"></i
           ></a>
         </div>
