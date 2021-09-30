@@ -87,13 +87,38 @@
     <section id="hero">
       <div class="hero-container">
         <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
           <div class="carousel-inner" role="listbox">
             <!-- Slide 1 -->
+            <div
+              class="carousel-item "
+              style="
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.664)),
+                  url(assets/img/hero/hero-1.jpg);
+              "
+            >
+              <div class="carousel-container">
+                <div class="carousel-content">
+                  <h2 class="animate__animated animate__fadeInDown">
+                    <span>Katsu ,</span>
+                    Restaurant Asiatique
+                  </h2>
+                  <p class="animate__animated animate__fadeInUp">
+                    une cuisine Asiatique qui demande un savoir-faire, une maitrise et de la finesse Une selection de
+                    plat et un choix multiple réalisé partir des meilleurs produits frais
+                  </p>
+                  <div>
+                    <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Notre menu</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
             <div
               class="carousel-item active"
               style="
                 background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.664)),
-                  url(assets/img/slide/slide-4.jpg);
+                  url(assets/img/gallery/gallery-13.jpg) no-repeat ; background-size: cover;
               "
             >
               <div class="carousel-container">
@@ -113,6 +138,12 @@
               </div>
             </div>
           </div>
+          <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+          </a>
+          <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+          </a>
         </div>
       </div>
     </section>
@@ -123,13 +154,7 @@
       <section id="about" class="about">
         <div class="container">
           <div class="row">
-            <div class="col-lg-5 align-items-stretch video-box" style="background-image: url('assets/img/about.jpg')">
-              <a
-                href="https://www.youtube.com/watch?v=jDDaplaOz7Q"
-                class="venobox play-btn mb-4"
-                data-vbtype="video"
-                data-autoplay="true"
-              ></a>
+            <div class="col-lg-5 align-items-stretch video-box" style="background-image: url('assets/img/gallery/gallery-1.jpg')">
             </div>
 
             <div class="col-lg-7 d-flex flex-column align-items-stretch">
