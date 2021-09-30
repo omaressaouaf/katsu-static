@@ -42,6 +42,23 @@ h6 {
   font-family: "Satisfy", sans-serif;
 }
 
+.btn-prim {
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: 50px;
+  padding: 10px 25px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  white-space: nowrap;
+  border: 1px solid var(--primary-color);
+}
+.btn-prim:hover {
+  background: var(--primary-color-dark);
+  color: #fff;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
