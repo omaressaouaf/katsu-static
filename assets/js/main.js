@@ -199,35 +199,6 @@
   });
 
   /**
-   * Menu isotope and filter
-   */
-  // window.addEventListener('load', () => {
-  //   let menuContainer = select('.menu-container');
-  //   if (menuContainer) {
-  //     let menuIsotope = new Isotope(menuContainer, {
-  //       itemSelector: '.menu-item',
-  //       layoutMode: 'fitRows'
-  //     });
-
-  //     let menuFilters = select('#menu-flters li', true);
-
-  //     on('click', '#menu-flters li', function(e) {
-  //       e.preventDefault();
-  //       menuFilters.forEach(function(el) {
-  //         el.classList.remove('filter-active');
-  //       });
-  //       this.classList.add('filter-active');
-
-  //       menuIsotope.arrange({
-  //         filter: this.getAttribute('data-filter')
-  //       });
-
-  //     }, true);
-  //   }
-
-  // });
-
-  /**
    * Testimonials slider
    */
   new Swiper(".events-slider", {
@@ -243,6 +214,49 @@
       type: "bullets",
       clickable: true,
     },
+  });
+
+  /**
+   * Gallery isotope and filter
+   */
+  window.addEventListener("load", () => {
+    let galleryContainer = select(".gallery-container");
+    if (galleryContainer) {
+      let galleryIsotope = new Isotope(galleryContainer, {
+        itemSelector: ".gallery-single",
+        layoutMode: "fitRows",
+        filter: ".filter-restaurant",
+      });
+
+      let galleryFilters = select("#gallery-flters li", true);
+
+      on(
+        "click",
+        "#gallery-flters li",
+        function (e) {
+          e.preventDefault();
+          galleryFilters.forEach(function (el) {
+            el.classList.remove("filter-active");
+          });
+          this.classList.add("filter-active");
+
+          const galleryParagraph = this.getAttribute("data-paragraph");
+          
+          document.getElementById(galleryParagraph).style.display = "block";
+          document.getElementById(
+            galleryParagraph === "restaurant-paragraph" ? "traiteur-paragraph" : "restaurant-paragraph"
+          ).style.display = "none";
+
+          galleryIsotope.arrange({
+            filter: this.getAttribute("data-filter"),
+          });
+          // galleryIsotope.on("arrangeComplete", function () {
+          //   AOS.refresh();
+          // });
+        },
+        true
+      );
+    }
   });
 
   /**
@@ -274,20 +288,20 @@
    * Gallery Load More
    */
 
-  const galleryWrapper = document.querySelector(".gallery .no-gutters");
+  // const galleryWrapper = document.querySelector(".gallery .no-gutters");
 
-  galleryWrapper.childNodes.forEach((child, index) => {
-    if (child.nodeName === "DIV" && index > 15) {
-      child.style.display = "none";
-    }
-  });
+  // galleryWrapper.childNodes.forEach((child, index) => {
+  //   if (child.nodeName === "DIV" && index > 15) {
+  //     child.style.display = "none";
+  //   }
+  // });
 
-  document.querySelector(".gallery-load-more").addEventListener("click", e => {
-    galleryWrapper.childNodes.forEach((child, index) => {
-      if (child.nodeName === "DIV" && index > 15) {
-        child.style.display = "block";
-      }
-    });
-    e.target.style.display = "none";
-  });
+  // document.querySelector(".gallery-load-more").addEventListener("click", e => {
+  //   galleryWrapper.childNodes.forEach((child, index) => {
+  //     if (child.nodeName === "DIV" && index > 15) {
+  //       child.style.display = "block";
+  //     }
+  //   });
+  //   e.target.style.display = "none";
+  // });
 })();

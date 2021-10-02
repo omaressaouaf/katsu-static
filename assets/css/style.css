@@ -58,7 +58,27 @@ h6 {
   background: var(--primary-color-dark);
   color: #fff;
 }
-
+.btn-prim-outline {
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 0 10px;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  color: var(--primary-color) !important;
+  border: 2px solid var(--primary-color);
+  background: transparent !important;
+}
+.btn-prim-outline:hover {
+  background: var(--primary-color) !important;
+  color: #fff !important;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -102,9 +122,7 @@ h6 {
   transition: all 0.4s;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
 }
-.call-delivery-btn i {
-  color : white !important;
-}
+
 
 
 
@@ -906,6 +924,8 @@ section {
   }
 }
 
+
+
 /*--------------------------------------------------------------
 # Specials
 --------------------------------------------------------------*/
@@ -1152,6 +1172,34 @@ section {
 .gallery .gallery-item:hover img {
   transform: scale(1.1);
 }
+.gallery #gallery-flters {
+  padding: 0;
+  margin: 0 auto 0 auto;
+  list-style: none;
+  text-align: center;
+  border-radius: 50px;
+}
+.gallery #gallery-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 16px 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  color: #444444;
+  margin: 0 3px 10px 3px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+  border: 2px solid var(--primary-color);
+  border-radius: 50px;
+}
+.gallery #gallery-flters li:hover, .gallery #gallery-flters li.filter-active {
+  color: #fff;
+  background: var(--primary-color);
+}
+.gallery #gallery-flters li:last-child {
+  margin-right: 0;
+}
 
 /*--------------------------------------------------------------
 # Chefs
@@ -1276,10 +1324,12 @@ section {
   color: #fff;
 }
 .testimonials .testimonial-item .testimonial-img {
-  width: 100px;
-  border-radius: 50%;
   border: 6px solid rgba(255, 255, 255, 0.15);
-  margin: 0 auto;
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 .testimonials .testimonial-item h3 {
   font-size: 20px;

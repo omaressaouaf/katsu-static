@@ -99,7 +99,8 @@
               class="carousel-item active"
               style="
                 background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.664)),
-                  url(assets/img/gallery/gallery-13.jpg) no-repeat ; background-size: cover;
+                  url(assets/img/gallery/gallery-13.jpg) no-repeat;
+                background-size: cover;
               "
             >
               <div class="carousel-container">
@@ -143,10 +144,10 @@
                   Confortablement dans notre restaurant asiatique gastronormique au décor chaleureux convivial, vous
                   degusterez une cuisine creative et authentique On vous propose une cuisine Asiatloue fruit d'un
                   parcours dans différents établissements de qualité, une cuisine Asiatique qui demande un savoir-faire,
-                  une maitrise et de la finesse Une sélection de plat et un choix multiple (sushi rolls , sushi boxes)
-                  réalisé à partir des meilleurs produits frais, travaills de manière délicate, raffinée et livrés chez
-                  vous à Casablanca ce qui fait de votre un moment gastronomique délicieux Nous vous repassons bon
-                  appétit!
+                  une maitrise et de la finesse Une sélection de plat et un choix multiple (sushi rolls , sushi boxes et
+                  plus ...) réalisé à partir des meilleurs produits frais, travaills de manière délicate, raffinée et
+                  livrés chez vous à Casablanca ce qui fait de votre un moment gastronomique délicieux Nous vous
+                  repassons bon appétit!
                 </p>
               </div>
             </div>
@@ -161,7 +162,7 @@
           <div class="section-title">
             <h2>Notre <span>Menu</span></h2>
           </div>
-          <div id="menuCarousel" data-bs-interval="30000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div id="menuCarousel" data-bs-interval="false" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <ol class="carousel-indicators" id="menu-carousel-indicators"></ol>
 
             <div aria-label="menu slider" class="carousel-inner" role="listbox">
@@ -356,11 +357,25 @@
               Quelques photos
               <span>de nous</span>
             </h2>
-            <p>apprenez à nous connaître davantage et nos plus beaux souvenirs</p>
+            <!-- <p>apprenez à nous connaître davantage et nos plus beaux souvenirs</p> -->
+          </div>
+          <div class="row mb-3">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="gallery-flters">
+                <li data-paragraph="restaurant-paragraph" data-filter=".filter-restaurant" class="filter-active">
+                  Restaurant
+                </li>
+                <li data-paragraph="traiteur-paragraph" data-filter=".filter-traiteur">Service traiteur</li>
+              </ul>
+            </div>
+            <div class="mt-2 d-flex justify-content-center">
+              <p id="restaurant-paragraph">restaurant paragraph</p>
+              <p id="traiteur-paragraph" style="display: none">Service traiteur</p>
+            </div>
           </div>
 
-          <div class="row no-gutters">
-            <div class="col-lg-3 col-md-4">
+          <div class="row no-gutters gallery-container">
+            <div class="col-lg-3 col-md-4 gallery-single filter-restaurant">
               <div class="gallery-item">
                 <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox" aria-label="Gallery" rel="noopener">
                   <img src="assets/img/gallery/gallery-1.jpg" alt="Gallery" class="img-fluid" />
@@ -368,7 +383,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-4">
+            <div class="col-lg-3 col-md-4 gallery-single filter-restaurant">
               <div class="gallery-item">
                 <a href="assets/img/gallery/gallery-2.jpg" class="gallery-lightbox" aria-label="Gallery" rel="noopener">
                   <img src="assets/img/gallery/gallery-2.jpg" alt="Gallery" class="img-fluid" />
@@ -376,7 +391,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-4">
+            <div class="col-lg-3 col-md-4 gallery-single filter-restaurant">
               <div class="gallery-item">
                 <a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox" aria-label="Gallery" rel="noopener">
                   <img src="assets/img/gallery/gallery-3.jpg" alt="Gallery" class="img-fluid" />
@@ -384,7 +399,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-4">
+            <div class="col-lg-3 col-md-4 gallery-single filter-restaurant">
               <div class="gallery-item">
                 <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox" aria-label="Gallery" rel="noopener">
                   <img src="assets/img/gallery/gallery-4.jpg" alt="Gallery" class="img-fluid" />
@@ -392,7 +407,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-4">
+            <div class="col-lg-3 col-md-4 gallery-single filter-restaurant">
               <div class="gallery-item">
                 <a href="assets/img/gallery/gallery-5.jpg" class="gallery-lightbox" aria-label="Gallery" rel="noopener">
                   <img src="assets/img/gallery/gallery-5.jpg" alt="Gallery" class="img-fluid" />
@@ -400,7 +415,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-4">
+            <div class="col-lg-3 col-md-4 gallery-single filter-restaurant">
               <div class="gallery-item">
                 <a href="assets/img/gallery/gallery-6.jpg" class="gallery-lightbox" aria-label="Gallery" rel="noopener">
                   <img src="assets/img/gallery/gallery-6.jpg" alt="Gallery" class="img-fluid" />
@@ -408,7 +423,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-4">
+            <div class="col-lg-3 col-md-4 gallery-single filter-restaurant">
               <div class="gallery-item">
                 <a href="assets/img/gallery/gallery-7.jpg" class="gallery-lightbox" aria-label="Gallery" rel="noopener">
                   <img src="assets/img/gallery/gallery-7.jpg" alt="Gallery" class="img-fluid" />
@@ -416,7 +431,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-4">
+            <div class="col-lg-3 col-md-4 gallery-single filter-restaurant">
               <div class="gallery-item">
                 <a href="assets/img/gallery/gallery-8.jpg" class="gallery-lightbox" aria-label="Gallery" rel="noopener">
                   <img src="assets/img/gallery/gallery-8.jpg" alt="Gallery" class="img-fluid" />
@@ -424,7 +439,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-4">
+            <div class="col-lg-3 col-md-4 gallery-single filter-traiteur">
               <div class="gallery-item">
                 <a href="assets/img/gallery/gallery-9.jpg" class="gallery-lightbox" aria-label="Gallery" rel="noopener">
                   <img src="assets/img/gallery/gallery-9.jpg" alt="Gallery" class="img-fluid" />
@@ -432,7 +447,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-4">
+            <div class="col-lg-3 col-md-4 gallery-single filter-traiteur">
               <div class="gallery-item">
                 <a
                   href="assets/img/gallery/gallery-10.jpg"
@@ -445,7 +460,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-4">
+            <div class="col-lg-3 col-md-4 gallery-single filter-traiteur">
               <div class="gallery-item">
                 <a
                   href="assets/img/gallery/gallery-11.jpg"
@@ -458,7 +473,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-4">
+            <div class="col-lg-3 col-md-4 gallery-single filter-traiteur">
               <div class="gallery-item">
                 <a
                   href="assets/img/gallery/gallery-12.jpg"
@@ -471,7 +486,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-4">
+            <div class="col-lg-3 col-md-4 gallery-single filter-traiteur">
               <div class="gallery-item">
                 <a
                   href="assets/img/gallery/gallery-13.jpg"
@@ -484,7 +499,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-4">
+            <div class="col-lg-3 col-md-4 gallery-single filter-traiteur">
               <div class="gallery-item">
                 <a
                   href="assets/img/gallery/gallery-14.jpg"
@@ -497,7 +512,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-4">
+            <div class="col-lg-3 col-md-4 gallery-single filter-traiteur">
               <div class="gallery-item">
                 <a
                   href="assets/img/gallery/gallery-15.jpg"
@@ -526,7 +541,7 @@
                 <div class="testimonial-item">
                   <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="Dounia batma" />
                   <h3>Dounia Batma</h3>
-                  <h4>chanteuse</h4>
+                  <h4>Chanteuse</h4>
                   <div class="stars">
                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
                     ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -542,14 +557,14 @@
                 <div class="testimonial-item">
                   <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="Leila hadioui" />
                   <h3>Leila hadioui</h3>
-                  <h4>actrice</h4>
+                  <h4>Actrice</h4>
                   <div class="stars">
                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
                     ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                   </div>
                   <p>
                     <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    ç'est très bon surtout les tacos j'ai rarement manger des tacos Bnan bhalhaka
+                    ç'est très bon surtout les tacos j'ai rarement mangé des tacos Bnan bhalhaka
                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                   </p>
                 </div>
@@ -557,8 +572,8 @@
               <div class="swiper-slide">
                 <div class="testimonial-item">
                   <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="sonia ngadi" />
-                  <h3>sonia ngadi</h3>
-                  <h4>influenceur</h4>
+                  <h3>Sonia ngadi</h3>
+                  <h4>Influenceuse</h4>
                   <div class="stars">
                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
                     ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -570,6 +585,39 @@
                   </p>
                 </div>
               </div>
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="sonia ngadi" />
+                  <h3>Bouchra ddeau</h3>
+                  <h4>Présentateur TV & Radio</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    مغآربة يتقنون الطبخ الآسيوي بشكل خيالي
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="sonia ngadi" />
+                  <h3>Nouhaila barbie</h3>
+                  <h4>Makeup artist</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    شكرا سهام الغزآلة على هاد آلعشيوة آلزوينة
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+
             </div>
             <div class="swiper-pagination"></div>
           </div>
@@ -634,7 +682,7 @@
     <footer id="footer">
       <div class="container">
         <a aria-label="Katsu Logo" rel="noopener" href="#hero"
-          ><img src="assets/img/logo-green.png" alt="katsu logo" class="img-fluid mb-4"
+          ><img src="assets/img/logo-white.png" alt="katsu logo" class="img-fluid mb-4"
         /></a>
         <p>
           <i class="bx bxs-quote-alt-left quote-icon-left"></i> Katsu, taste the difference
@@ -660,7 +708,7 @@
         </div>
         <div class="copyright">
           &copy; Copyright
-          <strong><span>Delicious</span></strong
+          <strong><span>Katsu</span></strong
           >. All Rights Reserved
         </div>
         <div class="credits">
@@ -684,7 +732,6 @@
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
