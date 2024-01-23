@@ -1,4 +1,4 @@
-## Katsu Restaurant Website (Static HTML Version)
+## Katsu Restaurant Website - Static HTML Version
 
 [Katsu](https://katsu.ma/) is an asian restaurant that offers a selection of dish and a multiple choice (sushi rolls, sushi boxes and more...)
 
